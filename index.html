@@ -4,8 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 3</title>
+    <!-- font CDN  -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <!-- daisyUI CDN  -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font awesome CDN  -->
+
+    <script src="https://kit.fontawesome.com/8bbc896aa4.js" crossorigin="anonymous"></script>
+
+    <!-- tailwind custom CDN  -->
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                
+              }
+            }
+          }
+        }
+      </script>
+
+    <style>
+        .manrope{
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
 </head>
-<body>
-    
+<body class="manrope">
+    <!-- Header section -->
+     <header>
+        <!-- Nav section -->
+         <nav class="container mx-auto ">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                      <li class="text-[#494949] font-bold"><a>Home</a></li>
+                      <li class="text-[#737373]"><a>Service</a></li>
+                      <li class="text-[#737373]"><a>Portfolio</a></li>
+                      <li class="text-[#737373]"><a>Blogs</a></li>
+                      <li class="text-[#737373]"><a>Contact Us</a></li>
+                    </ul>
+                  </div>
+                  <a class="btn btn-ghost text-xl"><span><i class="fa-solid fa-arrow-right -rotate-45"></i></span> Rinterio</a>
+                </div>
+                <div class="navbar-center hidden lg:flex lg:mx-24">
+                  <ul class="menu menu-horizontal px-1">
+                    <li class="text-[#494949] font-bold"><a>Home</a></li>
+                    <li class="text-[#737373]"><a>Service</a></li>
+                    <li class="text-[#737373]"><a>Portfolio</a></li>
+                    <li class="text-[#737373]"><a>Blogs</a></li>
+                    <li class="text-[#737373]"><a>Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="space-x-5">
+                    <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <span><i class="fa-solid fa-cart-shopping"></i></span>
+                  <a class="btn bg-[#ABEF5F] rounded-3xl">Book Consult <span><i class="fa-solid fa-arrow-right -rotate-45 "></i></span></a>
+                </div>
+              </div>
+         </nav>
+
+         <!-- header section start -->
+         <div class="diff aspect-[16/9]">
+            <div class="diff-item-1">
+              <div class="bg-primary text-primary-content grid place-content-center text-9xl font-black">
+                Tanvir
+              </div>
+            </div>
+            <div class="diff-item-2">
+              <div class="bg-base-200 grid place-content-center text-9xl font-black">Tanvir</div>
+            </div>
+            <div class="diff-resizer"></div>
+          </div>
+
+     </header>
+
 </body>
 </html>
