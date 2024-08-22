@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, theme=light">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 3</title>
     <!-- font CDN  -->
 
@@ -46,32 +46,7 @@
         <!-- Nav section -->
          <nav class="max-w-6xl mx-auto my-8">
             <div class="navbar bg-base-100 mx-auto pr-9">
-                <div class="navbar-start">
-                  <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden mr-44 bg-[#E9E9E9] rounded-full p-3 ">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M4 6h16M4 12h8m-8 6h16" />
-                      </svg>
-                    </div>
-                    <ul
-                      tabindex="0"
-                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                      <li class="text-[#494949] font-bold"><a>Home</a></li>
-                      <li class="text-[#737373]"><a>Service</a></li>
-                      <li class="text-[#737373]"><a>Portfolio</a></li>
-                      <li class="text-[#737373]"><a>Blogs</a></li>
-                      <li class="text-[#737373]"><a>Contact Us</a></li>
-                    </ul>
-                  </div>
+                <div class="navbar-start hidden lg:block">
                   <a class="btn btn-ghost text-2xl font-extrabold"><span><i class="fa-solid fa-arrow-right -rotate-45  bg-[#ABEF5F] rounded-full p-1"></i></span> Rinterio</a>
                 </div>
                 <div class="navbar-center hidden lg:flex pr-36 ">
@@ -90,7 +65,15 @@
                 </div>
               </div>
          </nav>
-
+         <!-- navbar for small device   -->
+    <nav class=" lg:hidden flex justify-between items-center max-w-96 mx-auto px-2 mt-0">
+      <div>
+        <a class="btn btn-ghost text-2xl font-extrabold"><span><i class="fa-solid fa-arrow-right -rotate-45  bg-[#ABEF5F] rounded-full p-1"></i></span> Rinterio</a>
+       </div>
+       <div>
+        <i class="fa-solid fa-bars bg-[#E9E9E9] text-[#737373] rounded-full p-3"></i>
+       </div>
+    </nav>
          <!-- header section start -->
          <section class=" lg:max-w-6xl mx-auto p-5">
           <div>
@@ -108,21 +91,61 @@
 
      <!-- main section start  -->
       <main>
-        <div class="hero bg-base-200 min-h-screen">
-          <div class="hero-content flex-col lg:flex-row-reverse">
-            <img
-              src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
-              class="max-w-sm rounded-lg shadow-2xl" />
+        <section class="bg-base-200">
+          <!-- design thought section  -->
+
+          <div class="lg:flex justify-between max-w-6xl mx-auto my-8 items-center">
+
+             <!-- design left -->
+           <div class="p-3">
+            <!-- victor section  -->
             <div>
-              <h1 class="text-5xl font-bold">Box Office News!</h1>
-              <p class="py-6">
-                Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-                quasi. In deleniti eaque aut repudiandae et a id nisi.
-              </p>
-              <button class="btn btn-primary">Get Started</button>
+              <img class="hidden lg:block border-2 border-dashed w-28 h-24 p-4  lg:relative" src="./assets/Vector.png" alt="">
+              <button class="btn rounded-3xl w-36 bg-white lg:absolute -bottom-56 left-28 "> <span><i class="fa-solid fa-arrow-right"></i></span> About us</button>
             </div>
+
+            <!-- text section  -->
+
+            <div class="max-w-lg mt-4">
+              <h1 class="font-bold text-[#212121] text-4xl pt-2">
+                We design thoughtful,<br>
+                 liveable spaces
+              </h1>
+              <p class="text-[#494949] font-medium mt-4">
+                The barn house captivates with its blend of rustic charm and <br>
+                modern sophistication, featuring weathered wood, sleek metal accents.
+              </p>
+            </div>
+
+            <!-- Commercial section -->
+             <div class=" max-w-lg max-h-32 border-2 bg-[#FFFFFF] rounded-2xl p-6 flex justify-between items-center gap-6 mt-6">
+              <img src="./assets/commercial.png" alt="">
+              <div>              
+                <h3 class="text-[#494949] font-bold">Commercial</h3>
+                <p class="text-[#737373] font-medium">The barn house captivates with its blend of rustic charm and modern.</p></div>
+             </div>
+
+             <!-- Residential section -->
+             <div class=" max-w-lg max-h-32 border-2 bg-[#FFFFFF] rounded-2xl p-6 flex justify-between items-center gap-6 mt-6">
+              <img src="./assets/residential.png" alt="">
+              <div>              
+                <h3 class="text-[#494949] font-bold">Residential</h3>
+                <p class="text-[#737373] font-medium">The barn house captivates with its blend of rustic charm and modern.</p></div>
+             </div>
+
+           </div>
+
+          <!-- design right  -->
+
+          <div>
+            <img src="./assets/Rectangle.png" alt="">
           </div>
-        </div>
+          </div>
+         
+        </section>
+
+
+
       </main>
 
 </body>
