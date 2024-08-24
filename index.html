@@ -38,6 +38,82 @@
         .manrope{
             font-family: "Manrope", sans-serif;
         }
+        /* portfolio-card-container */
+
+        .portfolio-card-container{
+          display: grid;
+          grid-template-areas: 
+          "a a a a a a a a b b b b"
+          "c c c d d d d d d e e e"
+          ;
+
+        }
+        .portfolio-card1{
+          grid-area: a;
+          align-items: center;
+          width: 772px;
+
+        }
+        .portfolio-card2{
+          grid-area: b;
+          width: 374px;
+
+        }
+        .portfolio-card3{
+          grid-area: c;
+          margin: 0;
+          width: 274px;
+        }
+        .portfolio-card4{
+          grid-area: d;
+          margin: 0;
+          width: 573px;
+          align-items: center;
+        }
+        .portfolio-card5{
+          grid-area: e;
+          margin: 0;
+          width: 274px;
+        }
+
+        @media screen and (max-width:640px) {
+          .portfolio-card-container{
+          grid-template-areas: 
+            "a"
+            "b"
+            "c"
+            "d"
+            "e"        
+            ;
+        }
+        .portfolio-card1{
+          flex-direction: column;
+          width: 335px;
+
+        }
+        .portfolio-card2{
+          width: 335px;
+          align-items: center;
+        }
+        .portfolio-card3{
+          width: 335px;
+          margin-left: 30px;
+          align-items: center;
+
+        }
+        .portfolio-card4{
+          flex-direction: column;
+          text-align: start;
+          width: 335px;
+
+        }
+        .portfolio-card5{
+          width: 335px;
+          align-items: center;
+          margin-left: 30px;
+        }
+
+        }
     </style>
 </head>
 <body class="manrope">
@@ -185,18 +261,77 @@
     <p class="text-[#494949] font-medium ">The barn house captivates with its blend of rustic charm and modern.</p>
    </div>
 
-</div>
-
-
+  </div>
            </div>
-         
+        </section>
+        <!-- Portfolio Section -->
+        <section class="py-24">
+          <div>
+                      <!-- header -->
+           <div class="max-w-lg mx-auto pb-8 text-center space-y-6">
+            <button class="btn btn-neutral bg-[#ABEF5F33] text-black rounded-3xl border-transparent px-4 py-2"><span><i class="fa-solid fa-arrow-right text-black rounded-full p-1"></i></span>Explore our Latest works</button>
+
+            <h1 class="text-2xl lg:text-5xl font-bold text-[#212121] align-middle">Our Latest Portfolio</h1>
+
+            <p class="text-[#494949] align-middle">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+           </div>
+
+            <!-- portfolio card section  -->
+
+            <div class="portfolio-card-container max-w-6xl mx-auto gap-6">
+              <div class="portfolio-card1 flex border bg-[#FFFFFF] rounded-2xl border-[#E9E9E9] p-6">
+                <div class="w-fit">
+                  <img src="./assets/img1.png" alt="">
+                </div>
+                <div class="pl-4">
+                  <h1 class="text-[#494949] text-2xl font-extrabold">
+                    Commercial
+                  </h1>
+                  <p class="text-[#737373] py-4">
+                    The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .
+                  </p>
+                  <button class="text-[##212121] font-extrabold">View Details  <span><i class="fa-solid fa-arrow-right -rotate-45  bg-[#ABEF5F] text-black rounded-full p-1"></i></span> </button>
+                </div>
+              </div>
+              <div class="portfolio-card2">
+                <div class=""> 
+                  <img class="border bg-[#FFFFFF] rounded-2xl border-[#E9E9E9] p-6" src="./assets/img2.png" alt="">
+                </div>
+              </div>
+              <div class="portfolio-card3">
+                <div class="aspect-auto w-max"> 
+                  <img class="border bg-[#FFFFFF] rounded-2xl border-[#E9E9E9] p-6" src="./assets/img3.png" alt="">
+                </div>
+              </div>
+              <div class="portfolio-card4 flex border bg-[#FFFFFF] rounded-2xl border-[#E9E9E9] p-6">
+                <div>
+                  <img src="./assets/img4.png" alt="">
+                </div>
+                <div class="pl-4">
+                  <h1 class="text-[#494949] text-2xl font-extrabold">
+                    Commercial
+                  </h1>
+                  <p class="text-[#737373] py-4">
+                    The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .
+                  </p>
+                  <button class="text-[##212121] font-extrabold">View Details  <span><i class="fa-solid fa-arrow-right -rotate-45  bg-[#ABEF5F] text-black rounded-full p-1"></i></span> </button>
+                </div>
+              </div>
+              <div class="portfolio-card5">
+                <div class=""> 
+                  <img class="border bg-[#FFFFFF] rounded-2xl border-[#E9E9E9] p-6" src="./assets/img5.png" alt="">
+                </div>
+            </div>
+
+
+          </div>
         </section>
 
 <!-- loading section  -->
 
-<section>
+<section class="m-5">
   <div class="mockup-window bg-base-300 border">
-    <div class="bg-base-200 px-4 py-16">The web site is being developed by <span class="font-semibold text-3xl text-[#ABEF5F]">Tanvir Ahmed</span></div>
+    <div class="bg-base-200 px-4 py-16 font-bold">The web site is being developed by <br> <span class="font-black text-3xl text-[#ABEF5F]">Tanvir Ahmed</span></div>
     <div> <p class="font-extrabold text-black">Next Part</p> 
       <span class="loading loading-spinner text-primary"></span>
       <span class="loading loading-spinner text-secondary"></span>
@@ -210,7 +345,7 @@
 </section>
 
       </main>
-      <footer class="footer bg-neutral text-neutral-content p-10">
+      <footer class="footer bg-neutral text-neutral-content p-10"> 
         <aside>
           <svg
             width="50"
